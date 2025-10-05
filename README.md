@@ -26,4 +26,6 @@ Responsive Design: Works on desktop and mobile devices.
 
 Interactive UI: Smooth hover effects and navigation between pages.
 
-*OUTPUT*
+*OUTPUT*:
+
+<img width="1869" height="917" alt="Image" src="https://github.com/user-attachments/assets/e18e343a-0eab-4e72-a059-f4fe737722ec" />
