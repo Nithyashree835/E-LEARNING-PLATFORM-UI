@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>E-Learn Hub</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+<header>
+  <div class="header-container">
+    <h1>E-Learn Hub> </h1>
+    <nav>
+      <a href="index.html">Courses</a>
+      <a href="progress.html">Progress</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <!-- Hero Section -->
+  <section class="hero">
+    <h2>Learn, Grow, and Succeed</h2>
+    <p>Interactive courses, video playlists, and progress tracking.</p>
+    <input type="text" id="search" placeholder="Search courses..." onkeyup="filterCourses()">
+  </section>
+
+<!-- Featured Carousel -->
+  <section class="carousel">
+    <h3>Featured Courses</h3>
+    <div class="carousel-container" id="carousel">
+      <div class="carousel-card" onclick="openCourse('course.html?course=js')">
+        <img src="JavaScript-Emblem (1).png" alt="JavaScript">
+        <h4>JavaScript Basics</h4>
+        <p>Learn JS fundamentals</p>
+      </div>
+      <div class="carousel-card" onclick="openCourse('course.html?course=react')">
+        <img src="React-icon.svg.png" alt="React">
+        <h4>React for Beginners</h4>
+        <p>Build interactive UIs</p>
+      </div>
+      <div class="carousel-card" onclick="openCourse('course.html?course=python')">
+        <img src="Python-Emblem.png" alt="Python">
+        <h4>Data Science with Python</h4>
+        <p>Analyze and visualize data</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Categories Section -->
+  <section class="categories">
+    <h3>Popular Categories</h3>
+    <div class="category-buttons">
+      <button onclick="filterCategory('development')"><i class="fas fa-code"></i> Development</button>
+      <button onclick="filterCategory('design')"><i class="fas fa-paint-brush"></i> Design</button>
+      <button onclick="filterCategory('marketing')"><i class="fas fa-bullhorn"></i> Marketing</button>
+      <button onclick="filterCategory('data')"><i class="fas fa-database"></i> Data Science</button>
+    </div>
+  </section>
+
+  <!-- Course List -->
+  <section class="course-list" id="course-list">
+    <div class="course-card" data-category="development">
+      <h3>JavaScript Basics</h3>
+      <p>Learn the fundamentals of JavaScript.</p>
+      <button onclick="openCourse('js')">Enroll <i class="fas fa-arrow-right"></i></button>
+    </div>
+
+    <div class="course-card" data-category="react">
+      <h3>React for Beginners</h3>
+      <p>Build interactive UIs with React.</p>
+      <button onclick="openCourse('react')">Enroll <i class="fas fa-arrow-right"></i></button>
+    </div>
+
+    <div class="course-card" data-category="python">
+      <h3>Data Science with Python</h3>
+      <p>Analyze and visualize data using Python.</p>
+      <button onclick="openCourse('python')">Enroll <i class="fas fa-arrow-right"></i></button>
+    </div>
+
+    <div class="course-card" data-category="design">
+      <h3>UI/UX Design Fundamentals</h3>
+      <p>Learn UI/UX design concepts.</p>
+      <button onclick="openCourse('ux')">Enroll <i class="fas fa-arrow-right"></i></button>
+    </div>
+  </section>
+
+   <!-- Testimonials Section -->
+  <section class="testimonials">
+    <h3>What Our Students Say</h3>
+    <div class="testimonial-container" id="testimonial-container">
+      <div class="testimonial">"This platform helped me learn React in just 2 weeks!" – Anna</div>
+      <div class="testimonial">"Amazing courses with interactive videos." – Raj</div>
+      <div class="testimonial">"I improved my career skills thanks to E-Learn Hub!" – Priya</div>
+    </div>
+  </section>
+
+
+  <!-- About Us -->
+  <section class="about-us">
+    <h3>About Us</h3>
+    <div class="about-content">
+      <p>E-Learn Hub is your one-stop platform for mastering new skills online. We offer interactive courses in development, design, data science, marketing, and more.</p>
+      <p>Our mission is to make learning accessible, engaging, and effective for everyone. With expert instructors, real-time progress tracking, and a community of learners, we empower you to grow your skills and achieve your goals.</p>
+    </div>
+  </section>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
